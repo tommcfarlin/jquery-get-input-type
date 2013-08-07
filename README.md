@@ -53,7 +53,7 @@ $('.input-elements, .select-elements').on( 'change', function(evt) {
 ## Contact and Licensing
 
 Web:      http://tommcfarlin.com/jquery-get-input-type/
-Twitter:  @tommcfarlin
-Email:    tom@tommcfarlin.com
+Twitter:  [@tommcfarlin](http://twitter.com/tommcfarlin)
+Email:    [tom@tommcfarlin.com](http://tommcfarlin.com/contact)
 
 Realeased under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
