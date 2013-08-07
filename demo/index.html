@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery getInputType Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.get-input-type.min.js"></script>
+    </head>
+    <body>
+
+    	<div>
+    		<ul>
+    			<li>
+    				<input type="text" class="demo-input" value="Demo Textbox" />
+    			</li>
+    			<li>
+    				<textarea class="demo-input">This is a sample textarea</textarea>
+    			</li>
+    			<li>
+    				<input type="checkbox" class="demo-input" />&nbsp;This is a sample checkbox
+    			</li>
+    			<li>
+    				<input type="radio" class="demo-input" />&nbsp;This is a sample radio box
+    			</li>
+    			<li>
+    				<select class="demo-input">
+    					<option value="default">Select an option...</option>
+    					<option value="1">1</option>
+    				</select>
+    			</li>
+    		</ul>
+    	</div>
+
+    	<div id="plugin-output">
+			<ul id="element-list">
+			</ul><!-- /#element-list -->
+    	</div><!-- /#plugin-output -->
+
+		<script type="text/javascript">
+		(function ($) {
+			"use strict";
+
+			$(function () {
+
+				// Setup a variable to store list items and to reference the element list
+				var $li, $elementList;
+				$elementList = $('#element-list');
+
+				// Loop through all of our inputs
+				$('.demo-input').each(function() {
+
+					// Create a list element to add to #element-list
+					$li = $('<li />');
+
+					// Add the text of this input type to the list item
+					$li.text( $(this).getInputType() );
+
+					// Append the list item to the element list
+					$elementList.append( $li );
+
+
+				});
+
+			});
+
+		}(jQuery));
+		</script>
+
+    </body>
+</html>
