@@ -50,10 +50,12 @@ $('.input-elements, .select-elements').on( 'change', function(evt) {
 });
 ```
 
-## Contact and Licensing
+## Contact
 
-Web:      http://tommcfarlin.com/jquery-get-input-type/
-Twitter:  [@tommcfarlin](http://twitter.com/tommcfarlin)
-Email:    [tom@tommcfarlin.com](http://tommcfarlin.com/contact)
+* Web:      http://tommcfarlin.com/jquery-get-input-type/
+* Twitter:  [@tommcfarlin](http://twitter.com/tommcfarlin)
+* Email:    [tom@tommcfarlin.com](http://tommcfarlin.com/contact)
 
-Realeased under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
+## Licensing
+
+* Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
